@@ -27,4 +27,11 @@ class SolutionTest extends PHPUnit_Framework_TestCase {
 	public function testExceptionsMessages() {
 		$this->assertEquals([], Solution::findPrimeFactors(-100));
 	}
+
+	public function testRomainNumbers() {
+		$this->assertEquals('III', Solution::convertToRomainNumber(3));
+		$this->assertEquals('IV', Solution::convertToRomainNumber(4));
+		$this->assertEquals('CM', Solution::convertToRomainNumber(900));
+		$this->assertEquals('MMMCMXCIX', Solution::convertToRomainNumber(3999));
+	}
 }
