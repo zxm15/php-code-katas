@@ -5,7 +5,7 @@
 **/
 class Solution {
 	
-	public function findPrimeFactors($value) {
+	public static function findPrimeFactors($value) {
 		//check edge cases
 		if (! is_int($value)) throw new InvalidArgumentException("The input is not an integer");
 		$solution = array();
